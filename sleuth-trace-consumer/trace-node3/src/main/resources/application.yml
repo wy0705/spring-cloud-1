@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trace-node3
+  zipkin:
+    base-url: http://localhost:30001
+server:
+  port: 40012
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://node1:30010/eureka/

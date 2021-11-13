@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/consul-config-provider" />
+            <option value="$PROJECT_DIR$/consul-consumer-feign" />
+            <option value="$PROJECT_DIR$/consul-provider" />
+            <option value="$PROJECT_DIR$/eureka-consumer-feign" />
+            <option value="$PROJECT_DIR$/eureka-provider" />
+            <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/eureka-server-ha" />
+            <option value="$PROJECT_DIR$/eureka-server-ha/eureka-server-node1" />
+            <option value="$PROJECT_DIR$/eureka-server-ha/eureka-server-node2" />
+            <option value="$PROJECT_DIR$/eureka-server-ha/eureka-server-node3" />
+            <option value="$PROJECT_DIR$/hystrix-dashboard" />
+            <option value="$PROJECT_DIR$/sleuth-trace-consumer" />
+            <option value="$PROJECT_DIR$/sleuth-trace-consumer/trace-node1" />
+            <option value="$PROJECT_DIR$/sleuth-trace-consumer/trace-node2" />
+            <option value="$PROJECT_DIR$/sleuth-trace-consumer/trace-node3" />
+            <option value="$PROJECT_DIR$/sleuth-trace-consumer/trace-node4" />
+            <option value="$PROJECT_DIR$/stream-kafka-consumer" />
+            <option value="$PROJECT_DIR$/stream-kafka-provider" />
+            <option value="$PROJECT_DIR$/turbine" />
+            <option value="$PROJECT_DIR$/zipkin-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

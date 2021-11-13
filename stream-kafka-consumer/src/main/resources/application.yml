@@ -1,0 +1,47 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: stream-kafka-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true #false禁用Consul配置，默认true
+        format: YAML    # 表示consul上面文件的格式 有四种 YAML PROPERTIES KEY-VALUE FILES
+        #data-key: configuration    #表示consul上面的KEY值(或者说文件的名字) 默认是data
+        data-key: data    #表示consul上面的KEY值(或者说文件的名字) 默认是data
+        #prefix设置配置值的基本文件夹
+        prefix: config
+        #defaultContext设置所有应用程序使用的文件夹名称
+        default-context: consul-provider
+        #profileSeparator设置用于使用配置文件在属性源中分隔配置文件名称的分隔符的值
+        profile-separator: ','
+    stream:
+      default-binder: kafka #默认的绑定器，
+      kafka: #如果用的是rabbitMQ这里填 rabbit
+        binder:
+          brokers: #Kafka的消息中间件服务器地址
+            - localhost:9092
+      bindings:
+        input:
+          binder: kafka
+          destination: test1
+          content-type: text/plain
+          group: input-group-1
+server:
+  port: 20080
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:10010/eureka/
+

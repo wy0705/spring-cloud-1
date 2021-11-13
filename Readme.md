@@ -1,0 +1,15 @@
+项目结构介绍：
+api-gateway:基于spring-cloud-gateway的网关
+consul-config-provider:基于consul的配置中心
+consul-consumer-feign:基于consul的服务调用方
+consul-provider:基于consul的服务提供方
+eureka-consumer-feign:基于eureka的服务调用方
+eureka-provider:基于eureka的服务提供方
+eureka-server:eureka服务注册中心（单机版）
+eureka-server-ha:eureka服务注册中心（3节点高可用版）
+hystrix-dashboard:基于hystrix的服务监控面板
+stream-kafka-consumer:基于kafka的消息总线消费者
+stream-kafka-provider:基于kafka的消息总线消息生产者
+turbine:服务监控数据收集
+zipkin-server:微服务调用链路收集工具
+sleuth-trace-consumer:微服务全链路调用demo

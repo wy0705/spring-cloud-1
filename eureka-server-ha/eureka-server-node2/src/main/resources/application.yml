@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-server-node2
+server:
+  port: 30011
+
+eureka:
+  instance:
+    hostname: node2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://node1:30010/eureka/,http://node3:30012/eureka/

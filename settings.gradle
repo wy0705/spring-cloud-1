@@ -1,0 +1,23 @@
+rootProject.name = 'spring-cloud-gradle'
+include 'eureka-server'
+include 'eureka-provider'
+include 'eureka-consumer-feign'
+include 'consul-provider'
+include 'consul-consumer-feign'
+include 'hystrix-dashboard'
+include 'turbine'
+include 'consul-config-provider'
+include 'api-gateway'
+include 'stream-kafka-provider'
+include 'stream-kafka-consumer'
+include 'zipkin-server'
+
+include 'eureka-server-ha:eureka-server-node1'
+include 'eureka-server-ha:eureka-server-node2'
+include 'eureka-server-ha:eureka-server-node3'
+
+
+include 'sleuth-trace-consumer:trace-node1'
+include 'sleuth-trace-consumer:trace-node2'
+include 'sleuth-trace-consumer:trace-node3'
+include 'sleuth-trace-consumer:trace-node4'

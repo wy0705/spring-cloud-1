@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: turbine
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+server:
+  port: 20011
+#  turbine.app-config=eureka-consumer-ribbon-hystrix
+#  turbine.cluster-name-expression="default"
+#  turbine.combine-host-port=true
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: consul-provider,consul-consumer-feign
+#  cluster-name-expression: 'default'
+  combineHostPort: true
+  clusterNameExpression: new String("default")
+#  instanceUrlSuffix: hystrix.stream
